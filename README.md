@@ -18,7 +18,6 @@ I simply implemented a model satisfying below spec.
 ```
 {
   id: 1,
-  ip: '10.0.0.1',
   title: 'Banner for Chrismas campain',
   start_at: '2018-12-20T00:00:00+0900',
   end_at: '2018-12-26T00:00:00+0900',
