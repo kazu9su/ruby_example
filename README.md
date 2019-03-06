@@ -1,43 +1,26 @@
 # RubyExample
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruby_example`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is an example implemantaion of ruby
 
-TODO: Delete this and the text above, and describe your gem
+# What I did
+I simply implemented a model satisfying below spec.
 
-## Installation
+# Definition
+* A banner class which has a public method to determine display banner itself or not
+* An instance can create by attributes and usually created by json
+* Banner can display itself during the available period
+* If specific ip is included in the attributes, it can show itself even before the period
+* Except for that, it cannot display itself
+* The time format of it is ISO8601
+* The permitted ips are '10.0.0.1', and '10.0.0.2'
+* A sample attributes is below
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'ruby_example'
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install ruby_example
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ruby_example. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the RubyExample project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/ruby_example/blob/master/CODE_OF_CONDUCT.md).
+{
+  id: 1,
+  ip: '10.0.0.1',
+  title: 'Banner for Chrismas campain',
+  start_at: '2018-12-20T00:00:00+0900',
+  end_at: '2018-12-26T00:00:00+0900',
+}
+```
