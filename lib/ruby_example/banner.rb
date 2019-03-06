@@ -8,9 +8,8 @@ module RubyExample
     attr_accessor :id, :ip, :title, :start_at, :end_at
     PERMITTED_IPS = ['10.0.0.1', '10.0.0.2'].freeze
 
-    def initialize(id:, ip:, title:, start_at:, end_at:)
+    def initialize(id:, title:, start_at:, end_at:)
       @id = id
-      @ip = ip
       @title = title
       @start_at = start_at
       @end_at = end_at
